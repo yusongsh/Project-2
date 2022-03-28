@@ -10,11 +10,16 @@
 ***
 
 ## ***Introduction***
-The NBA 75th Anniversary Team, also referred to as the NBA 75, was chosen in 2021 to honor the 75th anniversary of the founding of the National Basketball Association (NBA). It was the fourth and most recent anniversary team in the league. Similar to the 50 Greatest Players in NBA History in 1996, a panel of media members, current and former players, coaches, general managers, and team executives selected the greatest players in league history. Tasked with compiling a list of 75 players, the committee named an additional 76th member due to a tie in voting. The list is part of the league's anniversary celebration during the 2021–22 season. Forty-five of the seventy-six players were later assembled in Cleveland, during the halftime ceremony of the 2022 All-Star Game.(wikipedia)
+The NBA 75th Anniversary Team, also referred to as the NBA 75, was chosen in 2021 to honor the 75th anniversary of the founding of the National Basketball Association (NBA). It was the fourth and most recent anniversary team in the league. Similar to the 50 Greatest Players in NBA History in 1996, a panel of media members, current and former players, coaches, general managers, and team executives selected the greatest players in league history. Tasked with compiling a list of 75 players, the committee named an additional 76th member due to a tie in voting. The list is part of the league's anniversary celebration during the 2021–22 season. Forty-five of the seventy-six players were later assembled in Cleveland, during the halftime ceremony of the 2022 All-Star Game.(wikipedia) 
 ***
+
 
 ### ***Project Description***
 For the homepage of this project, I'll have a navbar on top and a search function under it and there will be some other information on the homepage, like featured athletes and some video highlights.  The goal of this project is to make a full crud application. Users can not only browse the full list of the 75-anniversary team members but also update players' information since some of the athletes are still playing. 
+***
+
+### ***Trello Board for plan details and progress***
+Please click here for [Trello](https://trello.com/invite/b/IJDg3Jzw/e6cc241e5895934aeb4758d95d2264fe/project-2-nba-75th-anniversary)
 ***
 
 ### ***Website Hierarchy👇👇👇***
@@ -33,7 +38,4 @@ For this project, I decided to make two sets of data. One is player positions, a
 ### ***Prototype 🖥️🖥️🖥️***
 I made an interactive prototype to guide me in styling my front end.
 ![Prototype](/image/demo.gif)
-***
 
-### ***Trello Board for plan details and progress***
-Please click here for [Trello](https://trello.com/invite/b/IJDg3Jzw/e6cc241e5895934aeb4758d95d2264fe/project-2-nba-75th-anniversary)
