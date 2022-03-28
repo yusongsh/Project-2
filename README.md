@@ -1,9 +1,14 @@
-# Project 2 - Full-Stack MERN
+# Project 2 - NBA 75th Anniversary
 
-### Date: March 28th
-### By: Yusong Shi
-### Full-Stack MERN Project
+#### Date: March 28th
+#### By: Yusong Shi
+#### Full-Stack MERN Project
 ***
+
+### Social Media
+[GITHUB](https://github.com/yusongsh) | [PORTFOLIO](https://yusong.space/) | [LINKEDIN](https://www.linkedin.com/in/yusong-sh/)
+***
+
 
 ![header-image](/image/nba-shop-12-medals-nbacanda-ftr_w07b9lgm52on1hydnjnjxi82c.png)
 ##### Image credit: National Basketball Association(NBA)
