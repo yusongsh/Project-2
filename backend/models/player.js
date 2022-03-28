@@ -2,15 +2,16 @@ const { Schema } = require('mongoose')
 
 const Player = new Schema(
     {
-        name: {type: string, required: true },
-        position:{type: string, required: true},
-        points: {type: number, required: true},
-        rebounds: {type: number, required: true},
-        assists: {type: number, required: true},
-        championships: {type: number, required: true},
-        bioHighlight:{type: string, required: true},
-        biography: {type: string, required: true},
-        image: {type: string, required: true}
+        name: { type: String, required: true },
+        position:{ type: String, required: true },
+        points: { type: Number, required: true },
+        rebounds: { type: Number, required: true },
+        assists: { type: Number, required: true },
+        championships: { type: Number, required: true },
+        bioHighlight:{ type: String, required: true },
+        biography: { type: String, required: true },
+        image: { type: String, required: true },
+        video: { type: String, required: false },
     },
     {timestamps: true}
 )
