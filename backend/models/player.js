@@ -12,7 +12,6 @@ const Player = new Schema(
         bioHighlight:{ type: String, required: true },
         biography: { type: String, required: true },
         image: { type: String, required: true },
-        video: { type: String, required: false },
     },
     {timestamps: true}
 )
