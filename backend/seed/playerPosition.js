@@ -958,19 +958,6 @@ run()
 
 
 
-{
-    name: "",
-    position: "",
-    points: "",
-    rebounds: "",
-    assists: "",
-    championships: "",
-    HoFYear: "",
-    bioHighlight: "",
-    biography: "",
-    image: "",
-},
-
 
 
 
