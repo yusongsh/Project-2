@@ -6,17 +6,23 @@ import PlayList from './pages/PlayerList'
 import ViewByPosition from './pages/ViewByPosition'
 import PlayerDetails from './pages/PlayerDetails'
 import Footer from './components/Footer'
-
+import SocialFollow from "./SocialFollow"
 
 
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="page-container">
+      <div className='content-wrap'>
+      
       <Nav />
-    <h1>WHat up</h1>
+
+    <h1>What up</h1>
+    
     <Footer />
+
+    </div>
     </div>
   );
 }

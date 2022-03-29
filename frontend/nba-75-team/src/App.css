@@ -50,15 +50,114 @@
   font-style: normal;
 }
 
+
+
+/* Footer style */
+.Footer {
+  background-color: #111;
+  width: 100%;
+  height: 4em;
+  font-family: 'IBM Plex Mono', monospace;
+  display: flex;
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;  
+}
+
+.Footer .LeftSide-footer {
+  flex: 15%;
+  display: flex;
+  justify-content: left;
+  padding-left: 50px;
+  align-items: center;
+}
+
+.Footer .LeftSide-footer a {
+  font-weight: 700;
+  font-style: normal;
+  line-height: 31px;
+  font-size: 18px;
+  color: #FF4655;
+  text-decoration: none;
+}
+
+.Footer .RightSide-footer {
+  flex: 15%;
+  display: flex;
+  justify-content: right;
+  padding-right: 50px;
+  align-items: center;
+}
+
+.Footer .Middle-footer {
+  flex: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer .Middle-footer .Links a {
+  margin: 0 1em;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ECE8E1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.social-container a {
+    color: #ECE8E1;
+    margin: 0 .5em;
+}
+
+
+
+
+
+
+
 /* Media query for navbar */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 870px) {
   .Nav .RightSide .Links a {
     font-size: 14px;
   }
   .Nav .RightSide {
     padding-right: 25px;
   }
+
+  .Footer .Middle-footer .Links a {
+     margin: 0 .5em;
+    font-size: 12px;
+  }
+  .Nav .RightSide .Links a {
+    margin: 0 .5em;
+  }
 }
+
+/* Screen Size for Footer */
+@media only screen and (max-width: 725px) {
+  .Footer {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Footer .LeftSide-footer {
+    justify-content: center;
+    padding-left: 0px;
+    padding-top: 1em;
+  }
+  .Footer .RightSide-footer {
+    justify-content: center;
+    padding-right: 0px;
+    padding-bottom: 2em;
+  }
+  .Footer .Middle-footer {
+    padding: 1em;
+  }
+}
+
 
 @media only screen and (max-width: 640px) {
   .Nav .RightSide .Links a {
@@ -73,6 +172,7 @@
 }
 
 @media only screen and (max-width: 515px) {
+  /* Nav */
   .Nav .RightSide .Links {
     display: none;
   }
@@ -110,4 +210,35 @@
     margin-top: 2.5em;
     font-size: 16px;
   }
+
+
+/* Footer */
+  .Footer {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Footer .LeftSide-footer {
+    justify-content: center;
+    padding-left: 0px;
+    padding-top: 1em;
+  }
+  .Footer .RightSide-footer {
+    justify-content: center;
+    padding-right: 0px;
+    padding-bottom: 2em;
+  }
+  .Footer .Middle-footer {
+    padding: 1em;
+  }
+  .Footer .Middle-footer .Links a {
+    display: flex;
+    padding: 4px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .Footer .LeftSide-footer a {
+    font-size: 24px;
+  }
 }
+
