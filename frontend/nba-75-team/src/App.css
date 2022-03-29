@@ -16,7 +16,6 @@
 }
 
 .Nav .LeftSide a {
-  font-family: 'IBM Plex Mono';
   font-weight: 700;
   font-style: normal;
   line-height: 31px;
@@ -69,10 +68,9 @@
     padding-right: 5px;
   }
   .Nav .LeftSide {
-    padding-left: 20px;
+    padding-left: 25px;
   }
 }
-
 
 @media only screen and (max-width: 515px) {
   .Nav .RightSide .Links {
@@ -81,13 +79,19 @@
   .Nav .LeftSide {
     padding-left: 25px;
   }
+  .Nav .LeftSide a {
+    font-size: 18px;
+  }
   .Nav .RightSide {
     padding: 25px;
   }
   .Nav .RightSide button {
     display: flex;
-    padding: 6px 12px;
-    background-color: #ECE8E1;
+    padding: 20px 20px;
+    background-color: hsla(38, 22%, 90%, 0);
+    background-image: url('./image/menu-icon.png');
+    background-repeat: no-repeat, repeat;
+    background-position: center; /* Center the image */
     border: none;
     border-radius: 5px;
   } 

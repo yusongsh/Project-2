@@ -5,6 +5,7 @@ import About from './pages/About'
 import PlayList from './pages/PlayerList'
 import ViewByPosition from './pages/ViewByPosition'
 import PlayerDetails from './pages/PlayerDetails'
+import Footer from './components/Footer'
 
 
 
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <Nav />
     <h1>WHat up</h1>
+    <Footer />
     </div>
   );
 }

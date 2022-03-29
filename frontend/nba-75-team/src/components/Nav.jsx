@@ -16,7 +16,7 @@ function Nav() {
                 <Link to='/viewByPosition' >View by Position</Link>
                 <Link to='/playerList' >Player list</Link>
             </div>
-            <button onClick={() => setShowLinks(!showLinks) }>Open</button>
+            <button onClick={() => setShowLinks(!showLinks) }></button>
         </div>
     </div>
   )
