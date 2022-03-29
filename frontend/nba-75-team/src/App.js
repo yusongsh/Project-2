@@ -1,29 +1,38 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom'
+import { Route, Router, Routes } from 'react-router-dom'
 import Nav from './components/Nav'
 import About from './pages/About'
-import PlayList from './pages/PlayerList'
 import ViewByPosition from './pages/ViewByPosition'
 import PlayerDetails from './pages/PlayerDetails'
 import Footer from './components/Footer'
-import SocialFollow from "./SocialFollow"
+import Home from './pages/Home'
+import PlayerList from './pages/PlayerList';
 
 
 
 
 function App() {
+  
   return (
-    <div className="page-container">
-      <div className='content-wrap'>
-      
-      <Nav />
 
-    <h1>What up</h1>
-    
-    <Footer />
+    <div className="App">
+      <header>
+        <Nav />
+      </header>
+      <main>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/playerlist' element={< PlayerList />} />
+          <Route path='/viewByPosition' element={<ViewByPosition />} />
+          <Route path='/playerlist/details' element={<PlayerDetails />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
 
-    </div>
-    </div>
   );
 }
 

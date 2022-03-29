@@ -13,8 +13,8 @@ function footer() {
             <div className='Middle-footer'>
                 <div className='Links'>
                     <Link to='/viewByPosition' >View by Position</Link>
-                    <Link to='/playerList' >Player list</Link>
-                    <Link to='/aboutThis' >About this Project</Link>
+                    <Link to='/playerlist' >Player list</Link>
+                    <Link to='/about' >About this Project</Link>
                 </div>
             </div>
             <div className='RightSide-footer'>
