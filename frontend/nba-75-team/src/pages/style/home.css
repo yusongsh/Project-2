@@ -1,0 +1,83 @@
+.Home{
+    margin-bottom: 6em;
+ }
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: aqua; */
+    background-image:url('../img/mjdunk.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    font-family: 'IBM Plex Mono';
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Subtitle {
+    color: #FF4655;
+    margin: 0;
+}
+
+.Title{
+    color: #ECE8E1;
+    font-size: 2em;
+    margin-top: 0ex;
+}
+
+
+
+
+/* Section 2 */
+.intro-wrapper {
+    background-color: #ECE8E1;
+    background-image: url('../img/background-text.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px;
+}
+
+.intro-content {
+    width: 60vw;
+    text-align: center;
+    font-family: 'IBM Plex Mono';
+    background-color: #111;
+    border-radius: 15px;;
+    padding: 50px;
+    color: #ECE8E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.sm-title {
+    flex: 30%;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.paragraph {
+    flex: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.02%;
+}

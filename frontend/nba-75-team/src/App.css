@@ -59,7 +59,8 @@
   height: 4em;
   font-family: 'IBM Plex Mono', monospace;
   display: flex;
-  position:absolute;
+  margin-top: 100px;
+  position:fixed;
   left:0;
   bottom:0;
   right:0;  
