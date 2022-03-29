@@ -13,6 +13,7 @@ import PlayerDetails from './pages/PlayerDetails'
 function App() {
   return (
     <div className="App">
+      <Nav />
     <h1>WHat up</h1>
     </div>
   );
