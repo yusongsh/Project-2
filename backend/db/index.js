@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 mongoose 
-    .connect('')
+    .connect('mongodb://127.0.0.1:27017/playerPosition')
     .then(() => {
            console.log('connected!')
      })

@@ -300,8 +300,8 @@ const main = async () => {
             championships: "2 times (1999, 2003)",
             HoFYear: "2009",
             bioHighlight: "THE PERSONIFICATION OF POWER AND GRACE.",
-            biography: `Before there was Tim Duncan, there was David "The Admiral" Robinson. The legendary San Antonio Spurs center averaged 21.1 points and 10.6 rebounds over his 14-year career, laying the groundwork for the Spurs to become a dynasty. He won two NBA championships, an MVP award and was a 10-time All-NBA selection in his career.",
-            image: "https://cdn.nba.com/manage/2021/10/david_robinson1-1-scaled.jpg`,
+            biography: `Before there was Tim Duncan, there was David "The Admiral" Robinson. The legendary San Antonio Spurs center averaged 21.1 points and 10.6 rebounds over his 14-year career, laying the groundwork for the Spurs to become a dynasty. He won two NBA championships, an MVP award and was a 10-time All-NBA selection in his career.`,
+            image: "https://cdn.nba.com/manage/2021/10/david_robinson1-1-scaled.jpg",
         },
         {
             name: "Hakeem Olajuwon",
