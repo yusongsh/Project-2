@@ -1,3 +1,4 @@
+/* Nav Bar */
 .Nav {
   background-color: #111;
   width: 100%;
@@ -5,7 +6,6 @@
   font-family: 'IBM Plex Mono', monospace;
   display: flex;
 }
-
 
 .Nav .LeftSide {
   flex: 50%;
@@ -33,6 +33,14 @@
   align-items: center;
 }
 
+.Nav .RightSide button {
+  display: none;
+}
+
+.Nav .RightSide #hidden {
+  display: flex;
+}
+
 .Nav .RightSide .Links a {
   margin: 0 1em;
   font-weight: 600;
@@ -41,4 +49,61 @@
   text-decoration: none;
   text-transform: uppercase;
   font-style: normal;
+}
+
+/* Media query for navbar */
+@media only screen and (max-width: 850px) {
+  .Nav .RightSide .Links a {
+    font-size: 14px;
+  }
+  .Nav .RightSide {
+    padding-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .Nav .RightSide .Links a {
+    font-size: 12px;
+  }
+  .Nav .RightSide {
+    padding-right: 5px;
+  }
+  .Nav .LeftSide {
+    padding-left: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 515px) {
+  .Nav .RightSide .Links {
+    display: none;
+  }
+  .Nav .LeftSide {
+    padding-left: 25px;
+  }
+  .Nav .RightSide {
+    padding: 25px;
+  }
+  .Nav .RightSide button {
+    display: flex;
+    padding: 6px 12px;
+    background-color: #ECE8E1;
+    border: none;
+    border-radius: 5px;
+  } 
+  .Nav .RightSide #hidden {
+    position: absolute;
+    left: 0px;
+    top: 4em;
+    height: 200px;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Nav .RightSide #hidden a {
+    margin-top: 2.5em;
+    font-size: 16px;
+  }
 }
