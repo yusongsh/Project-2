@@ -7,28 +7,22 @@ function About() {
     <div className='about-wrapper'>
       <div className='about-content'>
         <h2>This page is about this project 🫠</h2>
-        <p>For the project, our task is to build a full-stack (Mongoose/Express/React/Node), professional-looking application with a functioning backend and frontend. The website should allow users to interact with its pages, make requests (buttons, HTML forms, dropdowns, searchbars, etc.) to the backend, and we need to display the data (text, images, etc.) in a meaningful way. </p>
-        <h3>This project was build within a week, and here's how the week looks like</h3>
+        <p>For the project, our task is to build a full-stack (Mongoose/Express/React/Node), professional-looking application with a functioning backend and frontend. The website should allow users to interact with its pages, make requests (buttons, HTML forms, dropdowns, search bars, etc.) to the backend, and we need to display the data (text, images, etc.) in a meaningful way. </p>
+        <h3>This project was built within a week, and here's how the week looks like</h3>
         <div>
           <ul>
             <li>Sunday: March 27th</li>
-              <p>Project Pitches Approval, Wireframe, ERD, Prototype</p>
-              <br/>
+              <p className='timeline'>Project Pitches Approval, Wireframe, ERD, Prototype</p>
             <li>Monday: March 28th</li>
-              <p>Set up backend, build database</p>
-              <br/>
+              <p className='timeline'>Set up the backend, build database</p>
             <li>Tuesday: March 29th</li>
-              <p>Build React app, make components with responsive mindset</p>
-              <br/>
+              <p className='timeline'>Build React app, make components with a responsive mindset</p>
             <li>Wednesday: March 30th</li>
-              <p>Advanced CSS, Render all conponents, add additional functions</p>
-              <br/>
-            <li>Thurday: March 31st</li>
-              <p>Deploy to Heroku</p>
-              <br/>
+              <p className='timeline'>Advanced CSS, Render all components, add additional functions</p>
+            <li>Thursday: March 31st</li>
+              <p className='timeline'>Deploy to Heroku</p>
             <li>Friday: Apr 1st</li>
-              <p>Presentation</p>
-              <br/>
+              <p className='timeline'>Presentation</p>
           </ul>
         </div>
       </div>
@@ -50,13 +44,7 @@ function About() {
             <div className='person-image person-1'></div>
              <h4>Steven DeLitta</h4>
         </div>
-        
-        
       </div>
-
-         
-
-
     </div>
   )
 }

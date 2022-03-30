@@ -1,5 +1,16 @@
 .about-wrapper{
     margin-bottom: 4em;
     font-family: 'IBM Plex Mono', monospace;
+    width: 89vw;
+    margin-left: 50px;
+ }
 
+ li {
+     font-weight: 600;
+     font-size: 14px;
+ }
+
+ .timeline {
+     font-size: 16px;
+     margin-top: 5px;
  }
