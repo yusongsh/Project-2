@@ -1,0 +1,53 @@
+body {
+    background-color: #ECE8E1;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.PlayerList-wrapper {
+    background-image: url('../img/hero-bg2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.playerlist-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.playerlist-image {
+    width: 340px;
+    height: 200px;
+    margin-bottom: 20px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.playlist-highlight {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
+.card-8 {
+    background-image: url('../img/nbacanda.png');
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 515px) {
+    .PlayerList-wrapper {
+        padding: 20px;
+    }
+}
