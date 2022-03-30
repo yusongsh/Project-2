@@ -22,7 +22,7 @@ useEffect(() => {
 
   return (
       <div>
-      <h1>Waaat up</h1>
+      <h1 style={{marginTop:'100px'}}>Waaat up</h1>
             {players.map((player) => {
                 return (
                     <div key={player._id}>
