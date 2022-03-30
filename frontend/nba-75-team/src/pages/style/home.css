@@ -81,3 +81,42 @@
     font-weight: 400;
     line-height: 143.02%;
 }
+
+/* Card section */
+.card-wrapper {
+    background-color: #ECE8E1;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    background-color: #FF4655;
+    width: 440px;
+    height: 446px;
+    margin: 10px;
+}
+
+.card-image {
+    height: 150px;
+    margin-bottom: 20px;
+    background-size: cover;
+}
+
+.card-1 {
+    background-image: url('../img/lbj\'.jpeg');
+}
+.card-2 {
+    background-image: url('../img/kobe.webp');
+}
+.card-3 {
+    background-image: url('../img/dwade.gif');
+}
+.card-4 {
+    background-image: url('../img/shaq.gif');
+}
+.card-5 {
+    background-image: url('../img/magic.jpeg');
+}
+.card-6 {
+    background-image: url('../img/steph.jpeg');
+}

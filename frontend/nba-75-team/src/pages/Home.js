@@ -27,43 +27,44 @@ function Home() {
     </div>
 
     <div className='card-wrapper'>
-      <div className='cards'>
-        <div className='card'>
-          <div>
-            {/* <img ref={`./img/lbj.jpeg`} alt=''></img> */}
-          </div>
-          <div>
+        <div className='cards'>
+          <div className='card-image card-1'></div>
             <h5>LEBRON JAMES</h5>
-          </div>
-          <div>
-            <h3>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</h3>
-          </div>
-          
+            <p>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
         </div>
-        <div className='card'>
-    
+        <div className='cards'>
+          <div className='card-image card-2'></div>
+              <h5>LEBRON JAMES</h5>
+              <p>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
         </div>
-        <div className='card'>
-          
+        <div className='cards'>
+          <div className='card-image card-3'></div>
+              <h5>LEBRON JAMES</h5>
+              <p>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
         </div>
-        <div className='card'>
-          
+        <div className='cards'>
+          <div className='card-image card-4'></div>
+              <h5>LEBRON JAMES</h5>
+              <p>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
         </div>
-        <div className='card'>
-          
+        <div className='cards'>
+          <div className='card-image card-5'></div>
+              <h5>LEBRON JAMES</h5>
+              <p>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
         </div>
-        <div className='card'>
-          
+        <div className='cards'>
+          <div className='card-image card-6'></div>
+              <h5>LEBRON JAMES</h5>
+              <p>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
         </div>
+    </div>    
+     
 
-      </div>
+
+
+
+
     </div>
-
-
-
-
-
-      </div>
   )
 }
 
