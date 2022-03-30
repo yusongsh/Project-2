@@ -35,6 +35,32 @@
 }
 
 
+input {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #ECE8E1;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    padding:24px;
+    font-size: 12px;
+    width: 40vw;
+}
+
+.search-button {
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #FF4655;
+    color:  #ECE8E1;
+    border: 8px solid #ECE8E1;
+    border-radius: 0 6px 6px 0;
+    padding: 16px 20px;
+}
+
+
+
+
+
 
 
 /* Section 2 */

@@ -11,7 +11,7 @@ function PlayerList() {
         </div>
 
     <div>
-      {/* <PlayerCard /> */}
+      <PlayerCard />
     </div>
 
     </div>
