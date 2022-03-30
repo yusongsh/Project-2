@@ -30,38 +30,41 @@ function Home() {
         <div className='cards'>
           <div className='card-image card-1'></div>
             <h5>LEBRON JAMES</h5>
-            <p>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
+            <p className='player-highlight'>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
         </div>
         <div className='cards'>
           <div className='card-image card-2'></div>
-              <h5>LEBRON JAMES</h5>
-              <p>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
+              <h5>KOBR BRYANT</h5>
+              <p className='player-highlight'>LEGACY OF UNWAVERED PASSION AND WORK ETHIC.</p>
         </div>
         <div className='cards'>
           <div className='card-image card-3'></div>
-              <h5>LEBRON JAMES</h5>
-              <p>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
+              <h5>DWYANE WADE</h5>
+              <p className='player-highlight'>LIMITLESS CHAMPION BRINGING THE HEAT.</p>
         </div>
         <div className='cards'>
           <div className='card-image card-4'></div>
-              <h5>LEBRON JAMES</h5>
-              <p>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
+              <h5>SHAQUILLE O'NEAL</h5>
+              <p className='player-highlight'>THE ENTERTAINER WITH UNLIMITED TALENT.</p>
         </div>
         <div className='cards'>
           <div className='card-image card-5'></div>
-              <h5>LEBRON JAMES</h5>
-              <p>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
+              <h5>MAGIC JOHNSON</h5>
+              <p className='player-highlight'>PURE BRILLIANCE REVOLUTIONIZED THE GAME.</p>
         </div>
         <div className='cards'>
           <div className='card-image card-6'></div>
-              <h5>LEBRON JAMES</h5>
-              <p>RARE COMBINATION OF SIZE, SKILL AND SAVVY.</p>
+              <h5>STEPHEN CURRY</h5>
+              <p className='player-highlight'>ELITE SHOOTER REIGNING SUPREME.</p>
         </div>
     </div>    
      
-
-
-
+    <div className='bottom-wrapper'>
+        <div className='bottom'>
+          <div className='bottom-image bottom-1'></div>
+      
+        </div>
+    </div>
 
 
     </div>
