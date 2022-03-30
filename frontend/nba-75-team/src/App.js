@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Router, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Nav from './components/Nav'
 import About from './pages/About'
 import ViewByPosition from './pages/ViewByPosition'

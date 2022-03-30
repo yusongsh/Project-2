@@ -1,0 +1,45 @@
+.playerList-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.playerList-content {
+    width: 300px;
+    text-align: left;
+    margin: 0px 17px 50px 0;
+}
+
+
+/* .playerList-image {
+    margin-bottom: 10px;
+} */
+
+#playerList-profile {
+    /* float: center; */
+    width:  300px;
+    height: 375px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* .playerList-bio {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    color: #111;
+} */
+
+#playerList-name {
+    color:#111;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+#playerList-hightlight {
+    color:#111;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    text-transform: uppercase;
+}

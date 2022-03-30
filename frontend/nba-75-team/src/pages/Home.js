@@ -62,9 +62,9 @@ function Home() {
     <div className='bottom-wrapper'>
         <div className='bottom'>
           <div className='bottom-image bottom-1'></div>
-      
         </div>
     </div>
+
 
 
     </div>

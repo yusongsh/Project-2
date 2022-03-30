@@ -14,6 +14,10 @@ function PlayerList() {
       <PlayerCard />
     </div>
 
+    <div>
+      <h4>Images from this website are from: https://www.nba.com/75/team</h4>
+    </div>
+
     </div>
 
   

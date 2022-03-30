@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-
+import './playercard.css'
 
 function PlayerCard() {
 
@@ -21,13 +21,17 @@ useEffect(() => {
 // console.log(players)
 
   return (
-      <div>
-      <h1 style={{marginTop:'100px'}}>Waaat up</h1>
+      <div className='playerList-wrapper' >
             {players.map((player) => {
                 return (
-                    <div key={player._id}>
-                        <img src={player.image} alt={player.name} style={{width:"200px"}}/>
-                        <h5>Name: {player.name}</h5>
+                    <div className='playerList-content' key={player._id}>
+                        <div className='playerList-image'>
+                            <img id='playerList-profile' src={player.image} alt={player.name}/>
+                        </div>
+                        <div className='playerList-bio'>
+                            <h5 id='playerList-name' >{player.name}</h5>
+                            <h5 id='playerList-hightlight'>{player.bioHighlight}</h5>
+                        </div>
                     </div>
         )})}
     </div>
