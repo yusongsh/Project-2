@@ -15,7 +15,7 @@ function PlayerList() {
     </div>
 
     <div>
-      <h4>Images from this website are from: https://www.nba.com/75/team</h4>
+      <h5 style={{fontSize:'16px',color:'#111', textAlign:'center', padding:'100px 0 120px'}}>Images from this website are from: <a style={{color:'#FF4655'}} href='https://www.nba.com/75/team' target='_blank' rel='noreferrer'> www.nba.com/75/team</a></h5>
     </div>
 
     </div>
