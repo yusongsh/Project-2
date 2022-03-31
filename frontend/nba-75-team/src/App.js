@@ -7,13 +7,26 @@ import PlayerDetails from './components/PlayerDetails'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import PlayerList from './pages/PlayerList';
-
-
+import { useState, useEffect } from 'react'
+import axios from 'axios'
 
 
 
 function App() {
 
+
+  const [players, setPlayers] = useState([])
+
+  const getPlayer = async () => {
+    const res = await axios(`http://localhost:3001/api/players`)
+    // const data = await res.json()
+    setPlayers(res.data)
+    // console.log(res.data)
+  }
+
+  useEffect(() => {
+    getPlayer()
+  },[])
 
 
 
@@ -27,7 +40,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/playerlist' element={< PlayerList />} />
-          <Route path='/playerlist/:_id' element={<PlayerDetails />} />
+          <Route path='/playerlist/:id' element={<PlayerDetails players={players} />} />
           <Route path='/viewByPosition' element={<ViewByPosition />} />
           <Route path='/about' element={<About />} />
         </Routes>

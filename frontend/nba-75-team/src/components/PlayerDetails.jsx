@@ -9,6 +9,7 @@ function PlayerDetails(props) {
 
    
     let { id } = useParams()
+    console.log(id)
 
     useEffect(() => {
         let selectedPlayer = props.players.find(
@@ -16,32 +17,28 @@ function PlayerDetails(props) {
         )
         setPlayer(selectedPlayer)
     },[props.players, id])
-    console.log(props)
 
-    return (
-        <div>
-            <h2>Helloe</h2>
+    // console.log(selectedPlayer)
+
+
+  return selectedPlayer ? (
+    <div className='details'>
+        <div className='details-hero'>
+            <img src={selectedPlayer.image} alt={selectedPlayer.name} />
+            <h4>Points: {selectedPlayer.points}</h4>
+            <h4>Rebounds: {selectedPlayer.rebounds}</h4>
+            <h4>Assists: {selectedPlayer.assists}</h4>
+            <h4>Championships: {selectedPlayer.championships}</h4>
+            <h4>HoFYear: {selectedPlayer.HoFYear}</h4>
         </div>
-    )
-
-
-//   return selectedPlayer ? (
-//     <div className='details'>
-//         <div className='details-hero'>
-//             <img src={selectedPlayer.image} alt={selectedPlayer.name} />
-//             <h4>Points: {selectedPlayer.points}</h4>
-//             <h4>Rebounds: {selectedPlayer.rebounds}</h4>
-//             <h4>Assists: {selectedPlayer.assists}</h4>
-//             <h4>Championships: {selectedPlayer.championships}</h4>
-//             <h4>HoFYear: {selectedPlayer.HoFYear}</h4>
-//         </div>
-//         <div>
-//             <h3>{selectedPlayer.bioHighlight}</h3>
-//             <h3>{selectedPlayer.biography}</h3>
-//         </div>
+        <div>
+            <h3>{selectedPlayer.bioHighlight}</h3>
+            <h3>{selectedPlayer.biography}</h3>
+        </div>
         
-//     </div>
-//   ) : null;
+    </div>
+  ) : <div>Loading</div>
+  
   }
 
 
