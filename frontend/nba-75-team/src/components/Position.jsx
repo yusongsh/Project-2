@@ -2,7 +2,7 @@ import React from 'react'
 import './playercard.css'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useNavigate} from 'react-router-dom'
+import { useNavigate, useParams} from 'react-router-dom'
 
 
 
@@ -31,6 +31,13 @@ const getPlayers = async () => {
     // console.log(res.data)
 }
 
+// const getPlayers = async () => {
+//     const res = await axios(`http://localhost:3001/api/players/position`)
+//     // const data = await res.json()
+//     setPlayers(res.data)
+//     // console.log(res.data)
+// }
+
 useEffect(() => {
     getPosition()
     getPlayers()
@@ -38,7 +45,22 @@ useEffect(() => {
 
 
 
+const guard = players.filter((player, index) => 
+    player.position === positions[0]._id
+    )
 
+console.log(guard)
+
+// console.log(players.position)
+
+// const [selectPlayer, setSelectPlyer] = useState('')
+
+// useEffect(() => {
+//     let selectPlayer = players.filter(
+//         (player) => player.position_id === parseInt(id)
+//     )
+//     setSelectPlyer(selectPlayer)
+// })
 
 
 

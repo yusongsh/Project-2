@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* background-color: #111; */
     background-image:url('../img/mjdunk.gif');
     background-repeat: no-repeat;
     background-position: center;
@@ -194,6 +195,35 @@ h5 {
     background-position: center;
     border-radius: 5px;
 }
+
+
+
+
+/* resultData */
+.resultData {
+    display: flexs;
+}
+
+.resultsData-wrap {
+    display: flex;
+}
+
+.result-Data-image {
+    display: flex;
+    margin-top: 50px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.result-Data-name {
+    color: #111;
+}
+
+
+
+
+
+
 
 
 

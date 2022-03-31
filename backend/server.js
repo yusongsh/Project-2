@@ -48,6 +48,21 @@ app.get('/api/players/:id', async (req, res) => {
 })
 
 
+// app.get('/api/players/position', async (req, res) => {
+//   try {
+//       const { position } = req.params;
+//       if (!mongoose.Types.ObjectId.isValid(position)) throw Error ("Not a valid MongoDB ObjectId");
+//       const thisPlayer = await Player.findById(position);
+//       if (!thisPlayer) throw Error ("No players found.")
+//       console.log(`Players should be here!`)
+//       res.json(thisPlayer);
+//   } catch (e) {
+//       console.log(e)
+//       res.send(`ERROR!!! ${e.message}`);
+//   }
+// })
+
+
 app.get('/api/positions/:id', async (req, res) => {
   try {
       const { id } = req.params;

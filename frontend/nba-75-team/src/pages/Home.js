@@ -1,15 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './style/home.css'
 import Search from '../components/Search'
 import { Link, useNavigate } from 'react-router-dom'
+import ResultData from '../components/ResultData'
 
 function Home(props) {
 
-//   let navigate = useNavigate()
-//   const showPlayers = (player) => {
-//     navigate(`${player._id}`)
-// } 
- 
+
   const [searchResults, setSearchResults] = useState([])
   const [searchQuery, setSearchQuery] = useState('')
   // const [clickResult, setClickResults] = useState('')
@@ -26,20 +23,10 @@ function Home(props) {
       return player.name.toLowerCase().includes(searchQuery.toLowerCase())
     })
     // console.log(results)
-
     setSearchResults(results)
-    console.log(results)
+    // console.log(results)
   }
-
-  // const searchOnClick = function (e) {
-  //   const players = props.players
-  //   let results = players.map((player) => {
-  //     return player.id
-  //   })
-  //   setClickResults(clickResult)
-  // }
-
-  // {players.map((player) => {
+  console.log(searchResults)
 
 
   return (
@@ -56,6 +43,9 @@ function Home(props) {
             value={searchQuery} 
             // onClick={showPlayers}
             />
+          <div>
+            {!searchResults ? <div></div> : <div className='resultData'><ResultData searchResults={searchResults} /></div> }
+          </div>
         </div>
       </div>
 
