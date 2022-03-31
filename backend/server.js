@@ -48,7 +48,7 @@ app.get('/api/players/:id', async (req, res) => {
 })
 
 
-app.get('/api/positions/:_id', async (req, res) => {
+app.get('/api/positions/:id', async (req, res) => {
   try {
       const { id } = req.params;
       if (!mongoose.Types.ObjectId.isValid(id)) throw Error ("Not a valid MongoDB ObjectId");
