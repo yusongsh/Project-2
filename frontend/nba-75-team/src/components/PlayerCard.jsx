@@ -1,8 +1,8 @@
 import React from 'react'
+import './playercard.css'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import './playercard.css'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 
 
 

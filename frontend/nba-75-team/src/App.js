@@ -19,7 +19,6 @@ function App() {
 
   const getPlayer = async () => {
     const res = await axios(`http://localhost:3001/api/players`)
-    // const data = await res.json()
     setPlayers(res.data)
     // console.log(res.data)
   }
@@ -42,7 +41,7 @@ function App() {
           <Route path='/playerlist' element={< PlayerList />} />
           <Route path='/playerlist/:id' element={<PlayerDetails players={players} />} />
           <Route path='/viewByPosition' element={<ViewByPosition />} />
-          <Route path='/about' element={<About />} />
+          <Route path='/about' element={<About />} /> 
         </Routes>
       </main>
       <footer>
