@@ -1,9 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style/home.css'
 import Search from '../components/Search'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
-function Home() {
+function Home(props) {
+
+//   let navigate = useNavigate()
+//   const showPlayers = (player) => {
+//     navigate(`${player._id}`)
+// } 
+ 
+  const [searchResults, setSearchResults] = useState([])
+  const [searchQuery, setSearchQuery] = useState('')
+  // const [clickResult, setClickResults] = useState('')
+
+  const searchOnChange = (e) => {
+    const value = e.target.value
+    // console.log(value)
+    setSearchQuery(value)
+  
+  }
+  const searchOnSubmit = function (e) {
+    const players = props.players
+    let results = players.filter((player) => {
+      return player.name.toLowerCase().includes(searchQuery.toLowerCase())
+    })
+    // console.log(results)
+
+    setSearchResults(results)
+    console.log(results)
+  }
+
+  // const searchOnClick = function (e) {
+  //   const players = props.players
+  //   let results = players.map((player) => {
+  //     return player.id
+  //   })
+  //   setClickResults(clickResult)
+  // }
+
+  // {players.map((player) => {
 
 
   return (
@@ -14,7 +50,12 @@ function Home() {
           <h1 className='Title'>NBA 75TH ANNIVERSARY</h1>
         </div>
         <div>
-          <Search />
+          <Search 
+            onSubmit={searchOnSubmit} 
+            onChange={searchOnChange} 
+            value={searchQuery} 
+            // onClick={showPlayers}
+            />
         </div>
       </div>
 

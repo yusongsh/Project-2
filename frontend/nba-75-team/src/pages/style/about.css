@@ -1,3 +1,14 @@
+/* html{
+    height: 100%;
+} */
+
+body {
+    background-color: #ECE8E1;
+    font-family: 'IBM Plex Mono', monospace;
+    min-height: 100vh;
+    padding: 0;
+}
+
 .about-wrapper{
     margin-bottom: 4em;
     font-family: 'IBM Plex Mono', monospace;
