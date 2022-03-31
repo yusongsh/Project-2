@@ -19,6 +19,8 @@ function PlayerDetails(props) {
         setPlayer(selectedPlayer)
     },[props.players, id])
 
+
+
     // console.log(selectedPlayer)
 
 

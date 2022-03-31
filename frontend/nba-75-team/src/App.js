@@ -17,11 +17,13 @@ function App() {
 
   const [players, setPlayers] = useState([])
 
+
   const getPlayer = async () => {
     const res = await axios(`http://localhost:3001/api/players`)
     setPlayers(res.data)
     // console.log(res.data)
   }
+ 
 
   useEffect(() => {
     getPlayer()
