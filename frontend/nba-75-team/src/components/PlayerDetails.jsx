@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import '../pages/style/playerdetails.css'
 
 
 
@@ -22,18 +23,21 @@ function PlayerDetails(props) {
 
 
   return selectedPlayer ? (
-    <div className='details'>
-        <div className='details-hero'>
-            <img src={selectedPlayer.image} alt={selectedPlayer.name} />
-            <h4>Points: {selectedPlayer.points}</h4>
-            <h4>Rebounds: {selectedPlayer.rebounds}</h4>
-            <h4>Assists: {selectedPlayer.assists}</h4>
-            <h4>Championships: {selectedPlayer.championships}</h4>
-            <h4>HoFYear: {selectedPlayer.HoFYear}</h4>
+    <div className='details-container'>
+        <div className='details-image'>
+            <img className='details-hero' src={selectedPlayer.image} alt={selectedPlayer.name} />
         </div>
-        <div>
-            <h3>{selectedPlayer.bioHighlight}</h3>
-            <h3>{selectedPlayer.biography}</h3>
+        <div className='details-content'>
+            <h1 id='player-name'>// {selectedPlayer.name}</h1>
+            <div className='stats'>
+                <h4 className='stats-1'>Points: {selectedPlayer.points}</h4>
+                <h4 className='stats-1'>Rebounds: {selectedPlayer.rebounds}</h4>
+                <h4 className='stats-1'>Assists: {selectedPlayer.assists}</h4>
+                <h4 className='stats-1'>Championships: {selectedPlayer.championships}</h4>
+                <h4 className='stats-1'>HoFYear: {selectedPlayer.HoFYear}</h4>
+            </div>
+            <h3 className='stats-2'>{selectedPlayer.bioHighlight}</h3>
+            <h3 className='stats-3'>{selectedPlayer.biography}</h3>
         </div>
         
     </div>

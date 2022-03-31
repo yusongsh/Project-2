@@ -30,6 +30,10 @@ function About() {
         <h2>Special thanks to:</h2>
         <div className='person'>
             <div className='person-image person-1'></div>
+             <h4>Tim Ellis(MVP)</h4>
+        </div>
+        <div className='person'>
+            <div className='person-image person-1'></div>
              <h4>Brittany Morataya</h4>
         </div>
         <div className='person'>

@@ -184,7 +184,7 @@ h5 {
 
 .bottom {
     width: 80vw;
-    height: 60vh;
+    height: auto;
 }
 
 .bottom-image {
