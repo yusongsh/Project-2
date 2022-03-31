@@ -23,12 +23,11 @@
     border-radius: 5px;
 }
 
-/* .playerList-bio {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    color: #111;
-} */
+#playerList-profile:hover {
+    transform: scale(1.02);
+}
+
+
 
 #playerList-name {
     color:#111;
@@ -42,4 +41,22 @@
     font-weight: 400;
     margin-top: 5px;
     text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 515px) {
+    .playerList-content {
+       margin: 0 0 40px; 
+    }
 }

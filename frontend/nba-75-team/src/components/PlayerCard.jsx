@@ -2,8 +2,17 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './playercard.css'
+import { useNavigate, Link } from 'react-router-dom'
 
-function PlayerCard() {
+
+
+
+function PlayerCard(props) {
+
+let navigate = useNavigate()
+const showPlayers = (player) => {
+    navigate(`${player._id}`)
+} 
 
 const [players, setPlayers] = useState([])
 
@@ -11,7 +20,7 @@ const getPlayer = async () => {
     const res = await axios(`http://localhost:3001/api/players`)
     // const data = await res.json()
     setPlayers(res.data)
-    console.log(res.data)
+    // console.log(res.data)
 }
 
 useEffect(() => {
@@ -24,7 +33,7 @@ useEffect(() => {
       <div className='playerList-wrapper' >
             {players.map((player) => {
                 return (
-                    <div className='playerList-content' key={player._id}>
+                    <div className='playerList-content' key={player._id} onClick={() => showPlayers(player)} >
                         <div className='playerList-image'>
                             <img id='playerList-profile' src={player.image} alt={player.name}/>
                         </div>

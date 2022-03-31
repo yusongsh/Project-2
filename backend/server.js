@@ -3,8 +3,9 @@ const cors = require('cors')
 const logger = require('morgan')
 const db = require('./db')
 const { Player, Position } = require('./models')
-
+const mongoose = require('mongoose')
 const PORT = process.env.PORT || 3001
+const bodyParser = require('body-parser')
 
 const app = express()
 
@@ -32,11 +33,11 @@ app.get('/api/positions', async (req, res) => {
 })
 
 
-app.get('/api/players/:_id', async (req, res) => {
+app.get('/api/players/:id', async (req, res) => {
   try {
       const { id } = req.params;
       if (!mongoose.Types.ObjectId.isValid(id)) throw Error ("Not a valid MongoDB ObjectId");
-      const thisPlayer = await Player.findById(_id);
+      const thisPlayer = await Player.findById(id);
       if (!thisPlayer) throw Error ("No players found.")
       console.log(`Players should be here!`)
       res.json(thisPlayer);
