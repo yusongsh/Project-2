@@ -49,7 +49,15 @@ const guard = players.filter((player, index) =>
     player.position === positions[0]._id
     )
 
-console.log(guard)
+const forward = players.filter((player, index) => 
+    player.position === positions[1]._id
+    )
+
+const center = players.filter((player, index) => 
+    player.position === positions[2]._id
+    )
+
+
 
 // console.log(players.position)
 

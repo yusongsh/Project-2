@@ -12,7 +12,7 @@ function ResultData(props) {
       {props.searchResults.map((r, index) => (
         <div className='result-Data-content' key={index} onClick={() => navigate(`/playerlist/${r._id}`) }>
           <img className='result-Data-image' src={r.image} alt={''} />
-         {/* <h3 className='result-Data-name'>{r.name}</h3> */}
+         <p style={{fontSize:'12px',fontWeight:'600', marginTop:'0', textAlign:'center'}}className='result-Data-name'>{r.name}</p>
        </div>
       )
       )}

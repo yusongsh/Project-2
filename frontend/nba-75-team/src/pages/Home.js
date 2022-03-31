@@ -43,8 +43,8 @@ function Home(props) {
             value={searchQuery} 
             // onClick={showPlayers}
             />
-          <div>
-            {!searchResults ? <div></div> : <div className='resultData'><ResultData searchResults={searchResults} /></div> }
+          <div className='resultData'>
+            {!searchResults ? <div></div> : <ResultData searchResults={searchResults} /> }
           </div>
         </div>
       </div>
