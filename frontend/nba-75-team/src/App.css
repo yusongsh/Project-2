@@ -240,5 +240,9 @@
   .Footer .LeftSide-footer a {
     font-size: 24px;
   }
+  .icon{
+    font-size: 24px;
+    margin: 10px;
+  }
 }
 
