@@ -8,14 +8,12 @@ function DeletePosition(props) {
   
   let id = props.positions
   
-  console.log(id)
+  // console.log(id)
 
 
   const DeletePosition = async () => {
        await axios.delete(`http://localhost:3001/api/positions/${id}`)
     }
-
-
 
   return (
     <div>

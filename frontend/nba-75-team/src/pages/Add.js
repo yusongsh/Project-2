@@ -2,10 +2,13 @@ import React from 'react'
 import AddPositions from '../components/AddPositions'
 import DeletePosition from '../components/DeletePosition'
 import './style/add.css'
+import Update from '../components/Update'
+
+
 
 function Add(props) {
 
-    console.log(props)
+    // console.log(props)
 
 
   return (
@@ -28,6 +31,7 @@ function Add(props) {
                         </div>
                         <div className='post-button' >
                             <DeletePosition positions={position._id}/>
+                            <Update position={position.description} />
                         </div>
                     </div>
                 )

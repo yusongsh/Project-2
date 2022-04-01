@@ -39,7 +39,7 @@ export default function AddPositions(props) {
         <p style={{ textAlign:'center' }}><strong>Enter your thoughts here 👇 </strong></p>
       </div>
     <div className='Form-wrapper'>
-      <form className='Form' onSubmit={ submit }>
+      <form className='Form' onSubmit={submit}>
         <input className='form-imput' type='text' id={'name'} name={'name'} placeholder={'Position in mind?'} onChange = {(e) => onChange(e)} />
         <textarea className='form-imput' type='text' id={'description'} name={'description'} placeholder={'Description of the position'} rows="4" onChange = {(e) => onChange(e)} />
         <button className='search-button form-search'>Submit</button>
