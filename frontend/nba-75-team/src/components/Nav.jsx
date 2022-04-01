@@ -15,6 +15,7 @@ function Nav() {
             <div className='Links'id={showLinks ? 'hidden' : ''}>
                 <Link to='/viewByPosition' >View by Position</Link>
                 <Link to='/playerList' >Player list</Link>
+                <Link to='/add' >Add</Link>
             </div>
             <button onClick={() => setShowLinks(!showLinks) }></button>
         </div>

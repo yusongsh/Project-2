@@ -67,8 +67,6 @@ app.post('/api/addPosition', async (req, res) => {
     const addPosition = await req.body
     Position.insertMany(addPosition)
     return res.status(201).json({Position})
- 
-
 })
 
 

@@ -9,8 +9,8 @@ import Home from './pages/Home'
 import PlayerList from './pages/PlayerList';
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import Search from './components/Search';
 import Position from './components/Position'
+import AddPositions from './components/AddPlayers';
 
 function App() {
 
@@ -57,7 +57,7 @@ function App() {
           <Route path='/viewbyposition/' element={<ViewByPosition players={players} positions={positions} />} />
           <Route path='/viewbyposition/:id' element={<Position players={players} positions={positions} />} />
           <Route path='/about' element={<About />} /> 
-
+          <Route path='/add' element={<AddPositions />} />
         </Routes>
       </main>
       <footer>
