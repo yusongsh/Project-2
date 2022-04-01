@@ -191,6 +191,7 @@
   .Nav .RightSide {
     padding: 25px;
   }
+
   .Nav .RightSide button {
     display: flex;
     padding: 25px 20px;
@@ -201,6 +202,9 @@
     border: none;
     border-radius: 5px;
   } 
+
+  
+
   .Nav .RightSide #hidden {
     position: absolute;
     left: 0px;
@@ -250,5 +254,6 @@
     font-size: 24px;
     margin: 10px;
   }
+ 
 }
 

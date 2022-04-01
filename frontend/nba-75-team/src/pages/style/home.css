@@ -43,7 +43,7 @@ input {
     border-radius: 2px 0 0 2px;
     padding:24px;
     font-size: 12px;
-    width: 40vw;
+    width: 40vw; 
 }
 
 
@@ -51,6 +51,7 @@ input {
 .search-button {
     font-family: 'IBM Plex Mono', monospace;
     text-transform: uppercase;
+    opacity: .5;
     font-size: 12px;
     font-weight: 600;
     background-color: #FF4655;
@@ -60,6 +61,9 @@ input {
     padding: 16px 20px;
 }
 
+.search-button:hover{
+    opacity: 1;
+}
 
 
 
