@@ -9,8 +9,7 @@ import Home from './pages/Home'
 import PlayerList from './pages/PlayerList';
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import Position from './components/Position'
-import AddPositions from './components/AddPlayers';
+import Add from './pages/Add';
 
 function App() {
 
@@ -55,9 +54,8 @@ function App() {
           <Route path='/playerlist' element={< PlayerList players={players} />} />
           <Route path='/playerlist/:id' element={<PlayerDetails players={players} />} />
           <Route path='/viewbyposition/' element={<ViewByPosition players={players} positions={positions} />} />
-          <Route path='/viewbyposition/:id' element={<Position players={players} positions={positions} />} />
           <Route path='/about' element={<About />} /> 
-          <Route path='/add' element={<AddPositions />} />
+          <Route path='/add' element={<Add positions={positions}/>} />
         </Routes>
       </main>
       <footer>

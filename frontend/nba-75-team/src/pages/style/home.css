@@ -46,6 +46,16 @@ input {
     width: 40vw;
 }
 
+textarea {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #ECE8E1 !important;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    padding:24px;
+    font-size: 12px;
+    width: 40vw;
+}
+
 .search-button {
     font-family: 'IBM Plex Mono', monospace;
     text-transform: uppercase;
@@ -241,7 +251,7 @@ h5 {
 }
 
 
-
+/* Form input style */
 .Form-wrapper {
     display: flex;
     justify-content: center;
@@ -259,6 +269,7 @@ h5 {
     flex-direction: column;
     border: 1px solid #111;
     margin: 10px;
+    font-size: 16px;
 }
 
 
@@ -315,5 +326,8 @@ h5 {
         width:80vw;
         justify-content: center;
         align-items: center;  
+    }
+    input {
+        width: 70vw;
     }
 }

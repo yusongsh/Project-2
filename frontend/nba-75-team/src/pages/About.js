@@ -26,27 +26,41 @@ function About() {
           </ul>
         </div>
       </div>
-      <div className='about-content'>
-        <h2>Special thanks to:</h2>
-        <div className='person'>
-            <div className='person-image person-1'></div>
-             <h4>Tim Ellis(MVP)</h4>
+      <div className='specialThanks'>
+        <div className='thankstitle'>
+          <h2>Special thanks to:</h2>
         </div>
         <div className='person'>
             <div className='person-image person-1'></div>
+             <h4>Tim Ellis</h4>
+        </div>
+        <div className='person'>
+            <div className='person-image person-2'></div>
              <h4>Brittany Morataya</h4>
         </div>
         <div className='person'>
-            <div className='person-image person-1'></div>
+            <div className='person-image person-3'></div>
              <h4>Michelle Yang</h4>
         </div>
         <div className='person'>
-            <div className='person-image person-1'></div>
-             <h4>Jeremy Taubman</h4>
+            <div className='person-image person-4'></div>
+             <h4>Steven Delitta</h4>
         </div>
         <div className='person'>
-            <div className='person-image person-1'></div>
-             <h4>Steven DeLitta</h4>
+            <div className='person-image person-5'></div>
+             <h4>Ryan Ditzel</h4>
+        </div>
+        <div className='person'>
+            <div className='person-image person-6'></div>
+             <h4>Alex Barbosa</h4>
+        </div>
+        <div className='person'>
+            <div className='person-image person-7'></div>
+             <h4>Piero Caceres</h4>
+        </div>
+        <div className='person'>
+            <div className='person-image person-8'></div>
+             <h4>Jeremy Taubman</h4>
         </div>
       </div>
     </div>

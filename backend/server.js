@@ -69,6 +69,13 @@ app.post('/api/addPosition', async (req, res) => {
     return res.status(201).json({Position})
 })
 
+app.post('/api/addComment', async (req, res) => {
+  const addComment = await req.body
+  Comment.insertMany(addComment)
+  return res.status(201).json({Comment})
+})
+
+
 
 
 
