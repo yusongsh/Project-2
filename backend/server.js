@@ -69,12 +69,10 @@ app.post('/api/addPosition', async (req, res) => {
     return res.status(201).json({Position})
 })
 
-app.post('/api/addComment', async (req, res) => {
-  const addComment = await req.body
-  Comment.insertMany(addComment)
-  return res.status(201).json({Comment})
+app.delete('/api/positions/:id', async (req, res) => {
+  const deletePosition = await Position.findByIdAndDelete(req.params.id)
+  return res.send(deletePosition)
 })
-
 
 
 

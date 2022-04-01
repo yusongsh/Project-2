@@ -33,7 +33,6 @@ useEffect(() => {
 },[])
 
 
-
 const guards = players.filter((player, index) => 
     player.position === positions[0]._id
     )
@@ -47,11 +46,9 @@ const centers = players.filter((player, index) =>
     )
 
 
-
-
   return (
         <div className='playerPosition-wrapper' >
-             {/* <div className='allguards-wrapper'>
+             <div className='allguards-wrapper'>
                 <div className='allguards-intro'>
                     <h1>{positions[0].name}</h1>                        
                     <p className='small-p' >{positions[0].description}</p>
@@ -100,7 +97,7 @@ const centers = players.filter((player, index) =>
                                 )
                         })}
                 </div>
-            </div> */}
+            </div>
                    
         </div>
         

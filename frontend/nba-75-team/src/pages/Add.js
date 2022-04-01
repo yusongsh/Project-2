@@ -1,6 +1,6 @@
 import React from 'react'
 import AddPositions from '../components/AddPositions'
-
+import DeletePosition from '../components/DeletePosition'
 
 function Add(props) {
 
@@ -20,14 +20,18 @@ function Add(props) {
             {props.positions.map((position)=> {
                 return (
                     <div className='post'>
-                      <h1>{position.name}</h1> 
-                      <p>{position.description}</p> 
+                        <div>
+                            <h1>{position.name}</h1> 
+                            <p>{position.description}</p> 
+                        </div>
+                        <div>
+                            <DeletePosition positions={position._id}/>
+                        </div>
                     </div>
-                    
                 )
             })}
-
         </div>
+      
 
     </div>
   )
