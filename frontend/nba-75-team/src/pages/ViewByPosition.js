@@ -12,7 +12,7 @@ function ViewByPosition(props) {
     <div className='positionList-wrapper' >
       <div className='playerlist-content'>
           <div className='playerlist-image card-8'></div>
-            <p className='playlist-highlight'>Selected for being pioneers that have helped shape, define, and redefine the game. This is the NBA 75th Anniversary Team.(In no particular order)</p>
+            <p className='playlist-highlight'>Selected for being pioneers that have helped shape, define, and redefine the game. This is the NBA 75th Anniversary Team, listed by positions</p>
       </div>
       <div>
       <Position /> 

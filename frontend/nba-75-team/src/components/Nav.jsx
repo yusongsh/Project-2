@@ -12,7 +12,7 @@ function Nav() {
             <Link to='/' >NBA 75</Link>
         </div>
         <div className='RightSide'>
-            <div className='Links'id={showLinks ? 'hidden' : ''}>
+            <div className='Links' id={showLinks ? 'hidden' : ''}>
                 <Link to='/viewByPosition' >View by Position</Link>
                 <Link to='/playerList' >Player list</Link>
                 <Link to='/add' >💭</Link>

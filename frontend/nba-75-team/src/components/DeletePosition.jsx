@@ -13,15 +13,13 @@ function DeletePosition(props) {
 
   const DeletePosition = async () => {
        await axios.delete(`http://localhost:3001/api/positions/${id}`)
-    
     }
-
 
 
 
   return (
     <div>
-        <button className="delete-button" onClick={DeletePosition} >Delete(Think before you do</button>
+        <button className="delete-button" onClick={DeletePosition} >Delete(Think carefully) </button>
     </div>
   )
 }

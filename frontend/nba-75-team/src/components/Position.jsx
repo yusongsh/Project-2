@@ -9,8 +9,6 @@ import axios from 'axios'
 
 function PisitionDetails() {
 
-// let navigate = useNavigate()
-
 
 const [ positions, setPosition ] = useState([])
 const [ players, setPlayers ] = useState([])
@@ -50,8 +48,8 @@ const centers = players.filter((player, index) =>
         <div className='playerPosition-wrapper' >
              <div className='allguards-wrapper'>
                 <div className='allguards-intro'>
-                    <h1>{positions[0].name}</h1>                        
-                    <p className='small-p' >{positions[0].description}</p>
+                    <h1>Guard</h1>                        
+                    <p className='small-p'>There are also two types of guard. The point guard runs the offense and usually is the team’s best dribbler and passer. The point guard defends the opponent’s point guard and tries to steal the ball. The shooting guard is usually the team’s best shooter. The shooting guard can make shots from long distance and also is a good dribbler.</p>
                 </div> 
                <div className='allguards'>
                     {guards.map((guard, index) => {
@@ -67,8 +65,8 @@ const centers = players.filter((player, index) =>
 
             <div className='allforwards-wrapper'>
                 <div className='allforwards-intro'>
-                    <h1>{positions[1].name}</h1>
-                    <p className='small-p'>{positions[1].description}</p>
+                    <h1>Forward</h1>
+                    <p className='small-p'>There are two types of forward. The power forward does many of the things a center does, playing near the basket while rebounding and defending taller players. But power forwards also take longer shots than centers. The small forward plays against small and large players. They roam all over on the court. Small forwards can score from long shots and close ones.</p>
                 </div>
                 <div className='allforwards'>
                     {forwards.map((forward, index) => {
@@ -84,8 +82,8 @@ const centers = players.filter((player, index) =>
             
             <div className='allcenters-wrapper'>
                 <div className='allcenters-intro'>
-                    <h1>{positions[2].name}</h1>
-                    <p className='small-p'>{positions[2].description}</p>
+                    <h1>Center</h1>
+                    <p className='small-p'>The center is the tallest player on each team, playing near the basket. On offense, the center tries to score on close shots and rebound. But on defense, the center tries to block opponents’ shots and rebound their misses.</p>
                 </div>
                 <div className='allcenters'>
                     {centers.map((center, index) => {

@@ -61,24 +61,6 @@ body {
     display: flex;
 } */
 
-.add-content-wrapper{
-    margin: 200px 100px 60px 100px;
-    text-align: center;
-}
-
-#add-position {
-    font-size: 20px;
-}
-
-.post-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 100px
-}
-
 @media only screen and (max-width: 515px) {
     .PlayerList-wrapper {
         padding: 20px;

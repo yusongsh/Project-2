@@ -6,7 +6,7 @@ function About() {
   return (
     <div className='about-wrapper'>
       <div className='about-content'>
-        <h2>This page is about this project 🫠</h2>
+        <h2>This page is about this project </h2>
         <p>For the project, our task is to build a full-stack (Mongoose/Express/React/Node), professional-looking application with a functioning backend and frontend. The website should allow users to interact with its pages, make requests (buttons, HTML forms, dropdowns, search bars, etc.) to the backend, and we need to display the data (text, images, etc.) in a meaningful way. </p>
         <h3>This project was built within a week, and here's how the week looks like</h3>
         <div>
@@ -14,13 +14,13 @@ function About() {
             <li>Sunday: March 27th</li>
               <p className='timeline'>Project Pitches Approval, Wireframe, ERD, Prototype</p>
             <li>Monday: March 28th</li>
-              <p className='timeline'>Set up the backend, build database</p>
+              <p className='timeline'>Set up the backend, build database, FUNNN!</p>
             <li>Tuesday: March 29th</li>
               <p className='timeline'>Build React app, make components with a responsive mindset</p>
             <li>Wednesday: March 30th</li>
               <p className='timeline'>Advanced CSS, Render all components, add additional functions</p>
             <li>Thursday: March 31st</li>
-              <p className='timeline'>Deploy to Heroku</p>
+              <p className='timeline'>Deploy to Heroku? Nah, error everywhere, getting full CRUD 🫠 </p>
             <li>Friday: Apr 1st</li>
               <p className='timeline'>Presentation</p>
           </ul>
@@ -61,6 +61,10 @@ function About() {
         <div className='person'>
             <div className='person-image person-8'></div>
              <h4>Jeremy Taubman</h4>
+        </div>
+        <div className='person'>
+            <div className='person-image person-9'></div>
+             <h4>David Wu</h4>
         </div>
       </div>
     </div>
