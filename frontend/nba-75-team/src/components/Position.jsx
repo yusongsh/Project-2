@@ -2,7 +2,7 @@ import React from 'react'
 import './playercard.css'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useNavigate, useParams} from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 
 
 
@@ -10,33 +10,22 @@ import { useNavigate, useParams} from 'react-router-dom'
 function PisitionDetails() {
 
 // let navigate = useNavigate()
-// const showPositions = (position) => {
-//     navigate(`${position._id}`)
-// } 
+
 
 const [ positions, setPosition ] = useState([])
 const [ players, setPlayers ] = useState([])
 
 const getPosition = async () => {
     const res = await axios(`http://localhost:3001/api/positions`)
-    // const data = await res.json()
     setPosition(res.data)
     // console.log(res.data)
 }
 
 const getPlayers = async () => {
     const res = await axios(`http://localhost:3001/api/players`)
-    // const data = await res.json()
     setPlayers(res.data)
     // console.log(res.data)
 }
-
-// const getPlayers = async () => {
-//     const res = await axios(`http://localhost:3001/api/players/position`)
-//     // const data = await res.json()
-//     setPlayers(res.data)
-//     // console.log(res.data)
-// }
 
 useEffect(() => {
     getPosition()
@@ -45,49 +34,77 @@ useEffect(() => {
 
 
 
-const guard = players.filter((player, index) => 
+const guards = players.filter((player, index) => 
     player.position === positions[0]._id
     )
 
-const forward = players.filter((player, index) => 
+const forwards = players.filter((player, index) => 
     player.position === positions[1]._id
     )
 
-const center = players.filter((player, index) => 
+const centers = players.filter((player, index) => 
     player.position === positions[2]._id
     )
 
 
 
-// console.log(players.position)
-
-// const [selectPlayer, setSelectPlyer] = useState('')
-
-// useEffect(() => {
-//     let selectPlayer = players.filter(
-//         (player) => player.position_id === parseInt(id)
-//     )
-//     setSelectPlyer(selectPlayer)
-// })
-
-
-
-// console.log(players)
 
   return (
-      <div className='playerList-wrapper' >
-            {positions.map((position) => {
-                return (
-                    <div className='playerList-content' key={position._id} 
-                    // onClick={() => showPositions(position)} 
-                    >
-                        <div className='playerList-bio'>
-                            <h5 id='playerList-name' >{position.name}</h5>
-                            <h5 id='playerList-hightlight'>{position.description}</h5>
+        <div className='playerPosition-wrapper' >
+             <div className='allguards-wrapper'>
+                <div className='allguards-intro'>
+                    <h1>{positions[0].name}</h1>                        
+                    <p>{positions[0].description}</p>
+                </div> 
+               <div className='allguards'>
+                    {guards.map((guard, index) => {
+                        return (
+                        <div className='guard-image' key={index}>
+                            <img src={guard.image} alt={''} style={{width:'100px'}}></img>
+                            <h3>{guard.name}</h3>
                         </div>
-                    </div>
-        )})}
-    </div>
+                                )
+                        })}
+                </div>
+            </div> 
+
+            <div className='allforwards-wrapper'>
+                <div className='allforwards-intro'>
+                    <h1>{positions[1].name}</h1>
+                    <p>{positions[1].description}</p>
+                </div>
+                <div className='allforwards'>
+                    {forwards.map((forward, index) => {
+                        return (
+                        <div className='guard-image' key={index}>
+                            <img src={forward.image} alt={''} style={{width:'100px'}}></img>
+                            <h3>{forward.name}</h3>
+                        </div>
+                                )
+                        })}
+                </div>
+            </div>
+            
+            <div className='allcenters-wrapper'>
+                <div className='allcenters-intro'>
+                    <h1>{positions[2].name}</h1>
+                    <p>{positions[2].description}</p>
+                </div>
+                <div className='allcenters'>
+                    {centers.map((center, index) => {
+                        return (
+                        <div className='guard-image' key={index}>
+                            <img src={center.image} alt={''} style={{width:'100px'}}></img>
+                            <h3>{center.name}</h3>
+                        </div>
+                                )
+                        })}
+                </div>
+            </div>
+                   
+        </div>
+        
+
   )
 }
 

@@ -286,4 +286,10 @@ h5 {
     /* .bottom-image {
         margin-bottom: 200px;
     } */
+    .resultData {
+        display: flex;
+        width:80vw;
+        justify-content: center;
+        align-items: center;  
+    }
 }

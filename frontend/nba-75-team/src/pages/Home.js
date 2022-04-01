@@ -9,7 +9,7 @@ function Home(props) {
 
   const [searchResults, setSearchResults] = useState([])
   const [searchQuery, setSearchQuery] = useState('')
-  // const [clickResult, setClickResults] = useState('')
+ 
 
   const searchOnChange = (e) => {
     const value = e.target.value
@@ -41,7 +41,6 @@ function Home(props) {
             onSubmit={searchOnSubmit} 
             onChange={searchOnChange} 
             value={searchQuery} 
-            // onClick={showPlayers}
             />
           <div className='resultData'>
             {!searchResults ? <div></div> : <ResultData searchResults={searchResults} /> }
