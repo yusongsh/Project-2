@@ -54,7 +54,7 @@ function App() {
           <Route path='/' element={<Home  players={players} />} />
           <Route path='/playerlist' element={< PlayerList players={players} />} />
           <Route path='/playerlist/:id' element={<PlayerDetails players={players} />} />
-          <Route path='/viewbyposition/' element={<ViewByPosition />} />
+          <Route path='/viewbyposition/' element={<ViewByPosition players={players} positions={positions} />} />
           <Route path='/viewbyposition/:id' element={<Position players={players} positions={positions} />} />
           <Route path='/about' element={<About />} /> 
 

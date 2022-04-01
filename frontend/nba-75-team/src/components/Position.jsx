@@ -54,14 +54,14 @@ const centers = players.filter((player, index) =>
              <div className='allguards-wrapper'>
                 <div className='allguards-intro'>
                     <h1>{positions[0].name}</h1>                        
-                    <p>{positions[0].description}</p>
+                    <p className='small-p' >{positions[0].description}</p>
                 </div> 
                <div className='allguards'>
                     {guards.map((guard, index) => {
                         return (
                         <div className='guard-image' key={index}>
-                            <img src={guard.image} alt={''} style={{width:'100px'}}></img>
-                            <h3>{guard.name}</h3>
+                            <img id='guard-image' src={guard.image} alt={''}></img>
+                            <h3 className='small-h3'>{guard.name}</h3>
                         </div>
                                 )
                         })}
@@ -71,14 +71,14 @@ const centers = players.filter((player, index) =>
             <div className='allforwards-wrapper'>
                 <div className='allforwards-intro'>
                     <h1>{positions[1].name}</h1>
-                    <p>{positions[1].description}</p>
+                    <p className='small-p'>{positions[1].description}</p>
                 </div>
                 <div className='allforwards'>
                     {forwards.map((forward, index) => {
                         return (
-                        <div className='guard-image' key={index}>
-                            <img src={forward.image} alt={''} style={{width:'100px'}}></img>
-                            <h3>{forward.name}</h3>
+                        <div className='forward-image' key={index}>
+                            <img id='forward-image' src={forward.image} alt={''}></img>
+                            <h3 className='small-h3'>{forward.name}</h3>
                         </div>
                                 )
                         })}
@@ -88,14 +88,14 @@ const centers = players.filter((player, index) =>
             <div className='allcenters-wrapper'>
                 <div className='allcenters-intro'>
                     <h1>{positions[2].name}</h1>
-                    <p>{positions[2].description}</p>
+                    <p className='small-p'>{positions[2].description}</p>
                 </div>
                 <div className='allcenters'>
                     {centers.map((center, index) => {
                         return (
-                        <div className='guard-image' key={index}>
-                            <img src={center.image} alt={''} style={{width:'100px'}}></img>
-                            <h3>{center.name}</h3>
+                        <div className='center-image' key={index}>
+                            <img id='center-image' src={center.image} alt={''}></img>
+                            <h3 className='small-h3'>{center.name}</h3>
                         </div>
                                 )
                         })}
