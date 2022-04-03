@@ -16,6 +16,7 @@ function Update({id}) {
         await axios.put(`http://localhost:3001/api/positions/${id}`, {
           description
         })
+        window.location.reload(true)
      }
 
 console.log(description)

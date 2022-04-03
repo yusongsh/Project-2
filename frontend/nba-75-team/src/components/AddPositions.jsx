@@ -22,6 +22,7 @@ export default function AddPositions(props) {
         console.log(res)
         Navigate('/viewbyposition')
       })
+      window.location.reload(true)
       // console.log(data.name)
       // console.log(data.description)
     }
