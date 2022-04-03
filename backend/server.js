@@ -74,15 +74,19 @@ app.delete('/api/positions/:id', async (req, res) => {
   return res.send(deletePosition)
 })
 
+
 app.put('/api/positions/:id', async(req, res) => {
+  const {description} = await req.body
+  console.log(req.params, description)
   try {
-    const updatePosition = await Position.findByIdAndUpdate(req.params.description)
+    const updatePosition = await Position.findOneAndUpdate(req.params.id,{description},{new:true})
     res.status(200).send("Successfully Edited")
 } catch (error) {
   return res.status(500).json({ error: error.message })
 }
   // return res.send(updatePosition)
-})
+}) 
+
 
 
 

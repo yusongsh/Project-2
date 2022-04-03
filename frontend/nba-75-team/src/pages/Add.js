@@ -22,16 +22,16 @@ function Add(props) {
         </div>
         
         <div className='post-wrapper' >
-            {props.positions.map((position)=> {
+            {props.positions.map((position, index)=> {
                 return (
-                    <div className='post'>
+                    <div key={index} className='post'>
                         <div className='post-content'>
                             <h1>{position.name}</h1> 
                             <p>{position.description}</p> 
                         </div>
                         <div className='post-button' >
                             <DeletePosition positions={position._id}/>
-                            <Update position={position.description} />
+                            <Update id={position._id} />
                         </div>
                     </div>
                 )

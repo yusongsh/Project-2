@@ -11,6 +11,7 @@ export default function AddPositions(props) {
       name:'',
       description:''
     })
+
     function submit(e) {
       e.preventDefault()
       axios.post(url, {
@@ -21,8 +22,8 @@ export default function AddPositions(props) {
         console.log(res)
         Navigate('/viewbyposition')
       })
-      console.log(data.name)
-      console.log(data.description)
+      // console.log(data.name)
+      // console.log(data.description)
     }
     function onChange(e) {
       const newData = { ...data }
